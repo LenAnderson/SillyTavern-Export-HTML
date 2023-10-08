@@ -1,0 +1,44 @@
+.xh--prog--blocker {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0 0 0 / 0.1);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+.xh--prog--blocker > .xh--prog--content {
+  padding: 1em;
+  background-color: black;
+}
+.xh--prog--blocker > .xh--prog--content > .xh--prog--title {
+  font-size: 1.5em;
+}
+.xh--prog--blocker > .xh--prog--content > .xh--prog--outer {
+  height: 2em;
+  width: 25em;
+  max-width: 90vw;
+  background-color: rgba(100 100 100 / 1);
+  position: relative;
+}
+.xh--prog--blocker > .xh--prog--content > .xh--prog--outer > .xh--prog--inner {
+  height: 100%;
+  background-color: #ffa500;
+  transition: 100ms;
+}
+.xh--prog--blocker > .xh--prog--content > .xh--prog--outer > .xh--prog--label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 2em;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0 0 5px rgba(255 255 255 / 1);
+}
